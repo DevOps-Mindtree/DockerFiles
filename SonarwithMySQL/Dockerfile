@@ -68,7 +68,7 @@ EXPOSE 3306
 RUN apt-get update -y
 RUN apt-get install -y unzip wget
 
-ENV sonarQubeVersion 6.0
+ENV sonarQubeVersion 5.6.7
 
 RUN wget https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-${sonarQubeVersion}.zip
 RUN unzip sonarqube-*.zip
